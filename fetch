@@ -19,8 +19,8 @@ NC='\033[0m' # No Color
 # fetch
 echo -e "${BLUE}$(whoami)${NC}@$(cat /proc/sys/kernel/hostname)"
 echo "------------------"
-echo -e "${BLUE} ⸳ ${BLUE}${NC}$OS"
-echo -e "${RED} ⸳ ${RED}${NC}$ARCH"
-echo -e "${YELLOW} ⸳ ${YELLOW}${NC}$KERNEL"
-echo -e "${GREEN} ⸳ ${GREEN}${NC}$INIT"
-echo -e "${PURPLE} ⸳ ${PURPLE}${NC}$RAMUSAGE"
+echo -e "${BLUE} ⸳ ${NC}$OS"
+echo -e "${RED} ⸳ ${NC}$ARCH"
+echo -e "${YELLOW} ⸳ ${NC}$KERNEL"
+echo -e "${GREEN} ⸳ ${NC}$INIT"
+echo -e "${PURPLE} ⸳ ${NC}$RAMUSAGE"
