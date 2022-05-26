@@ -1,7 +1,7 @@
 PREFIX ?= /usr
 
 install:
-	@install -Dm755 fetch $(DESTDIR)$(PREFIX)/bin/fetch
+	@install -Dm755 sfetch $(DESTDIR)$(PREFIX)/bin/sfetch
 
 uninstall:
-	@rm -f $(DESTDIR)$(PREFIX)/bin/fetch
+	@rm -f $(DESTDIR)$(PREFIX)/bin/sfetch
