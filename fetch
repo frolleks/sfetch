@@ -1,0 +1,26 @@
+#!/bin/sh
+
+# system
+OS=`distro | grep Name: | sed "s/Name: //"`
+ARCH=`uname -m`
+KERNEL=`uname -r`
+INIT=`uname -i`
+UPTIME=`uptime | sed "s/.*up \([0-9]*\).*/\1/"`
+RAMUSAGE=`free -m | grep Mem: | awk '{print $3 "/" $2 "M"}'`
+
+# colors
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[0;33m'
+BLUE='\033[0;34m'
+PURPLE='\033[0;35m'
+NC='\033[0m' # No Color
+
+# fetch
+echo -e "${BLUE}$(whoami)${NC}@$(cat /proc/sys/kernel/hostname)"
+echo "------------------"
+echo -e "${BLUE} ⸳ ${BLUE}${NC}$OS"
+echo -e "${RED} ⸳ ${RED}${NC}$ARCH"
+echo -e "${YELLOW} ⸳ ${YELLOW}${NC}$KERNEL"
+echo -e "${GREEN} ⸳ ${GREEN}${NC}$INIT"
+echo -e "${PURPLE} ⸳ ${PURPLE}${NC}$RAMUSAGE"
