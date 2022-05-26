@@ -3,3 +3,6 @@ A simple system fetch CLI tool written in [Bash](https://www.gnu.org/software/ba
 
 ## Installation
 Run `make install` to install the system fetch tool.
+
+## Preview
+![](assets/screenshot.png)
